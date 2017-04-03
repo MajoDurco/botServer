@@ -7,7 +7,7 @@ run:
 init: clone pull getComposeFile
 
 getComposeFile:
-	curl --output docker-compose.yml https://raw.githubusercontent.com/MajoDurco/botServer/master/compose_file/docker-compose.yml
+	curl --output docker-compose.yml https://raw.githubusercontent.com/MajoDurco/botServer/master/utils/docker-compose.yml
 
 clone:
 	git clone git@github.com:MajoDurco/botServer.git ;\
