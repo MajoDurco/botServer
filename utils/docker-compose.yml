@@ -1,13 +1,13 @@
 version: '2'
 services:
   server:
-    build: ./server_dock
+    build: ./botServer
     ports:
       - "5000:5000"
   client:
     depends_on:
       - server
-    build: ./client_dock
+    build: ./botClient
     command: bash -c "sleep 10 && bash ./wait-for-it.sh server:5000 -- python3 ./client.py"
     stdin_open: true
     tty: true
