@@ -4,7 +4,7 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
-bot_c_3po = ChatBot("C-3PO",
+bot_c_3po = ChatBot("c_3po",
                     output_adapter="chatterbot.output.OutputAdapter",
                     input_adapter="chatterbot.input.VariableInputTypeAdapter",
                     logic_adapters=[
